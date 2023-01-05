@@ -91,6 +91,7 @@
     img 
         height: auto 
         width: 100%
+        max-width: 600px
         flex: 1 
 
         box-shadow: 0 4px 8px -2px #BFBFBF
