@@ -14,16 +14,9 @@
             title: "This Site",
             image: "/images/work/jamesbarret.png",
             link: { url: "https://jamesbarret.dev", text: "jamesbarret.dev"},
-            description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
-            tags: [ "Web Development", "SvelteKit", "Design" ]
-        },
-{
-            title: "This Site",
-            image: "/images/work/jamesbarret.png",
-            link: { url: "https://jamesbarret.dev", text: "jamesbarret.dev"},
-            description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
-            tags: [ "Web Development", "SvelteKit", "Design" ]
-        }, 
+            description: "I built this site from scratch.<br>I mocked up the design using Figma, carefully selecting colors and fonts that came together in a simple, fluid user experience.<br>I implemented the design using SvelteKit, my framework of choice, and generated a static webpage to balance page performance and ease of development.",
+            tags: [ "Figma", "SvelteKit", "Web Development" ]
+        }
     ]
 
     // I created this site from scratch using <strong>Figma</strong> and <strong>SvelteKit</strong>.<br>
@@ -58,8 +51,6 @@
 
 <style lang="sass">
 .content 
-    padding-bottom: 40px
-
     display: flex 
     flex-direction: column 
     gap: 20px
@@ -95,16 +86,26 @@
 
             li 
                 padding: 5px 10px 5px 10px 
-
                 border: 1px solid #4D4D4D
-                /* border-radius: 24px */
 
     img 
-        height: 300px 
-        width: auto
+        height: auto 
+        width: 100%
         flex: 1 
 
         box-shadow: 0 4px 8px -2px #BFBFBF
 
         object-fit: contain
+
+@media screen and (max-width: 1250px)
+    .section    
+        flex-direction: column-reverse
+        gap: 20px
+
+@media screen and (max-width: 440px)
+    ul 
+        flex-direction: column
+        
+        li 
+            width: fit-content
 </style>

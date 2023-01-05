@@ -41,7 +41,7 @@ a
         flex: 1 0
 
     .text 
-        flex-basis: 200px 
+        flex: 1 0 200px 
 
     .links
         flex-basis: 300px
@@ -49,6 +49,39 @@ a
         justify-content: flex-end
         gap: 20px
 
+        img 
+            height: 24px
+
 main 
     padding-top: 142px
+    padding-bottom: 20px
+
+@media screen and (max-width: 670px)
+    .navbar 
+        position: absolute
+
+        flex-direction: column
+        align-items: flex-start
+        gap: 20px
+
+        .text
+            flex-basis: 0
+        
+        .links 
+            flex-basis: 0
+            justify-content: flex-start
+    
+    main 
+        padding-top: 188px
+
+@media screen and (max-width: 400px)
+    .links 
+        width: 100%
+        gap: 0 !important
+
+        a
+            flex: 1
+
+        img
+            display: none
 </style>

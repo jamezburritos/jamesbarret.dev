@@ -45,22 +45,22 @@
 
 <Page title="Get in Touch"> 
     <div class="links">
-        <ul> 
+        <div> 
             {#each links.slice(0, pivot) as link (link.title)}
-            <li>
+            <section>
                 <h3>{link.title}</h3>
                 <a href={link.url}>{link.text}</a>
-            </li>
+            </section>
             {/each}
-        </ul>
-        <ul>
+        </div>
+        <div>
             {#each links.slice(pivot) as link (link.title)}
-            <li>
+            <section>
                 <h3>{link.title}</h3>
                 <a href={link.url}>{link.text}</a>
-            </li>
+            </section>
             {/each}
-        </ul>
+        </div>
     </div>
 </Page>
 
@@ -71,13 +71,19 @@
     display: flex 
     gap: 80px
 
-    ul
+    div
         margin: 0
         padding: 0
 
+        flex: 0 1
         display: flex 
         flex-direction: column
         gap: 20px
 
         list-style: none
+
+@media screen and (max-width: 500px)
+    .links 
+        flex-direction: column
+        gap: 20px
 </style>
