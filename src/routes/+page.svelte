@@ -22,6 +22,7 @@
 
 .content 
     margin: 0 50px 0 50px
+    width: 100%
 
     display: flex  
     justify-content: center
