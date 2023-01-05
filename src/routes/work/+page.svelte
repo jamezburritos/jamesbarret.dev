@@ -14,7 +14,7 @@
             title: "This Site",
             image: "/images/work/jamesbarret.png",
             link: { url: "https://jamesbarret.dev", text: "jamesbarret.dev"},
-            description: "I built this site from scratch.<br>I mocked up the design using Figma, carefully selecting colors and fonts that came together in a simple, fluid user experience.<br>I implemented the design using SvelteKit, my framework of choice, and generated a static webpage to balance page performance and ease of development.",
+            description: "I built this site from scratch.<br>I mocked up the design using Figma, carefully selecting colors and fonts that came together in a clean and simple user experience.<br>I implemented the design using SvelteKit, my framework of choice, and generated a static webpage to balance page performance and ease of development.",
             tags: [ "Figma", "SvelteKit", "Web Development" ]
         }
     ]

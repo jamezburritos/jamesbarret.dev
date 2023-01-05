@@ -5,8 +5,8 @@
 <Page title="About Me"> 
     <div class="content">
         <div class="left">
-            <h2>I'm James. I'm a student, developer and designer.</h2>
-            <p>I'm a developer, designer, and student based in Johannesburg, South Africa.<br>I love listening to music, playing games, and spending time with my friends.<br>I've been programming for 7 years and designing UI for 1 year.<br>It's my goal to create simple, effective solutions to any problem that I meet.</p>
+            <h2>I'm James.</h2>
+            <p>I'm a developer, designer, and student based in Johannesburg, South Africa.<br>I love listening to music, playing games, and spending time with my friends.<br>I've been programming for 7 years and designing UI for 1 year.<br>I come up with simple, effective solutions to any problems that I meet.</p>
         </div>
 
         <div class="right"> 

@@ -4,7 +4,7 @@
         <div class="text"> 
             <h1>Hi There</h1>
             <h2>I'm James</h2>
-            <p>I'm a developer, designer and student based in Johannesburg, South Africa. I have 2+ years of development experience and I aim to create simple, effective solutions to any problems presented to me.</p>
+            <p>I'm a developer, designer and student based in Johannesburg, South Africa. I have 2+ years of experience developing software and designing user interfaces.</p>
         </div>
     </div>
 </div>
