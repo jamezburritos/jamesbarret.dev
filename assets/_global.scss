@@ -4,11 +4,6 @@ body {
     all: unset;
 }
 
-figure {
-    margin: 0;
-    padding: 0;
-}
-
 h1,
 h2,
 h3,
@@ -19,7 +14,10 @@ p,
 a,
 i,
 button,
-input {
+input,
+figure,
+ul,
+ol {
     margin: 0;
     padding: 0;
 
@@ -40,6 +38,11 @@ input {
     color: white;
 }
 
+a,
+button {
+    cursor: pointer;
+}
+
 h1 {
     font-size: 4.5rem;
     font-weight: 700;
@@ -56,5 +59,22 @@ h3 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.05rem;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: underline;
+
+    transition: opacity 150ms linear;
+}
+
+a:hover {
+    opacity: 80%;
+}
+
+ol,
+ul {
+    margin-top: 4px;
+    list-style-position: inside;
 }

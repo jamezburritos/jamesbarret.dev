@@ -67,21 +67,67 @@ const scrollY = ref(0)
                     </a>
                 </div>
                 <p>
-                    I'm a student based in Johannesburg, South Africa. Here's a sentence about a
-                    cool thing that I built and the people it helps. This is about the type of
-                    person I am and what I like to do in my free time so you know I'm not a robot.
-                    Here's one last interesting sentence so that you remember me a bit better.
+                    I'm a student based in Johannesburg, South Africa. I'm interested in
+                    engineering, design, and computer science. I'm looking to study mechanical
+                    engineering, with an aim to work as an engineer. I love listening to music, and
+                    playing video games with my friends.
                 </p>
             </div>
             <div id="right">
                 <h2 class="section-header">Projects</h2>
-                <Card title="jamesbarret.dev" :tags="['Web Development', 'Nuxt3', 'Vue']">
-                    Irure dolor elit sint velit et consequat. Fugiat amet labore nostrud ex id magna
-                    dolore nostrud exercitation non ipsum. Officia proident ad proident velit
-                    laborum nulla. Ad ullamco consectetur ullamco mollit tempor veniam quis est
-                    reprehenderit commodo exercitation. Magna ullamco magna proident mollit ullamco
-                    dolore voluptate pariatur exercitation consequat non ullamco ullamco nisi.
-                    Reprehenderit velit nostrud duis consectetur fugiat ipsum.
+                <Card
+                    :tags="['Web Development', 'Nuxt3', 'Vue']"
+                    link="https://github.com/jamezburritos/jamesbarret.dev"
+                >
+                    <template #heading>jamesbarret.dev</template>
+                    I built this site from scratch using Nuxt, a framework built on Vue.js. It
+                    serves as a one-stop-shop for all things me, including my past projects,
+                    experience, and information. The goal is for prospective schools and employers
+                    to look at this site and be able to get all they need to know about me at a
+                    glance.
+                    <template #link>View Source</template>
+                </Card>
+                <h2 class="section-header">Education</h2>
+                <Card link="https://stjohnscollege.co.za/sixth-form">
+                    <template #heading>St John's Sixth Form</template>
+                    <template #subheading>2022 - Current</template>
+                    I'm reading Cambridge International A-Levels at St John's. I'm in my final year,
+                    with Mathematics, Further Mathematics, Physics, and Computer Science.
+                    <template #link>Website</template>
+                </Card>
+                <h2 class="section-header">Misc.</h2>
+                <Card>
+                    <template #heading>Contact</template>
+                    The best way to get in touch with me is via email. Give me a shout here:
+                    <br /><br />
+                    Email: <a href="mailto:jamesbarret715@gmail.com">jamesbarret715@gmail.com</a>
+                </Card>
+                <Card>
+                    <template #heading>Tech I Love</template>
+                    I'm familiar with a lot of tools, but here's a list of the ones I'm most
+                    comfortable with working on:
+                    <br /><br />
+                    My first choices for personal projects:
+                    <ul>
+                        <li>Vue (Nuxt)</li>
+                        <li>Svelte (SvetleKit)</li>
+                        <li>Typescript</li>
+                        <li>Appwrite</li>
+                        <li>Postgres</li>
+                        <li>Vercel</li>
+                        <li>C/C++</li>
+                        <li>Figma</li>
+                    </ul>
+                    <br /><br />
+                    Other tools that I've learned/used:
+                    <ul>
+                        <li>Python</li>
+                        <li>Java (JavaFX GUIs)</li>
+                        <li>Rust</li>
+                        <li>C# (Unity)</li>
+                        <li>Onshape</li>
+                        <li>Adobe Photoshop/Illustrator</li>
+                    </ul>
                 </Card>
             </div>
         </div>
@@ -129,8 +175,6 @@ main {
             width: 48px;
             height: 48px;
 
-            cursor: pointer;
-
             transition: opacity 150ms linear;
         }
 
@@ -141,7 +185,6 @@ main {
 
     p {
         max-width: min(100%, 640px);
-
         font-size: 1.25rem;
     }
 }
@@ -150,6 +193,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        max-height: 4rem;
+    }
 }
 
 #mountains {

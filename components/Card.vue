@@ -1,16 +1,25 @@
 <script setup lang="ts">
 defineProps<{
-    title: string
     tags?: string[]
+    link?: string
 }>()
 </script>
 
 <template>
     <section class="card">
-        <h3>{{ title }}</h3>
+        <div id="top">
+            <h3><slot name="heading" /></h3>
+            <h4><slot name="subheading" /></h4>
+        </div>
+
         <p><slot /></p>
-        <div class="tags">
-            <p class="tag" v-for="tag in tags">{{ tag }}</p>
+
+        <div id="bottom">
+            <div id="tags">
+                <p class="tag" v-for="tag in tags">{{ tag }}</p>
+            </div>
+            <div id="spacer" />
+            <a id="link" target="_blank" :href="link"><slot name="link" /></a>
         </div>
     </section>
 </template>
@@ -26,18 +35,33 @@ defineProps<{
 
     border-radius: 8px;
 
-    background: rgba(black, 20%);
+    background: rgba(#121933, 50%);
+    backdrop-filter: blur(8px);
 
-    .tags {
-        width: 100%;
+    h4 {
+        margin-top: 0.25rem;
 
+        font-weight: 500;
+    }
+
+    #bottom {
+        display: flex;
+    }
+
+    #tags {
         display: flex;
         gap: 8px;
     }
 
-    .tag {
-        padding: 4px 12px;
+    #spacer {
+        flex: 1;
+    }
 
+    .tag,
+    #link {
+        padding: 4px 12px;
+    }
+    .tag {
         border-radius: 16px;
         background: #3d4a78;
     }
