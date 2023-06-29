@@ -91,8 +91,9 @@ const scrollY = ref(0)
                 <Card link="https://stjohnscollege.co.za/sixth-form">
                     <template #heading>St John's Sixth Form</template>
                     <template #subheading>2022 - Current</template>
-                    I'm reading Cambridge International A-Levels at St John's. I'm in my final year,
-                    with Mathematics, Further Mathematics, Physics, and Computer Science.
+                    I'm studying for Cambridge International A-Levels at St John's College. I'm in
+                    my final year and am taking Mathematics, Further Mathematics, Physics and
+                    Computer Science.
                     <template #link>Website</template>
                 </Card>
                 <h2 class="section-header">Misc.</h2>
