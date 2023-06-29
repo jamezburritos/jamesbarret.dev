@@ -110,7 +110,7 @@ const scrollY = ref(0)
                     My first choices for personal projects:
                     <ul>
                         <li>Vue (Nuxt)</li>
-                        <li>Svelte (SvetleKit)</li>
+                        <li>Svelte (SvelteKit)</li>
                         <li>Typescript</li>
                         <li>Appwrite</li>
                         <li>Postgres</li>
